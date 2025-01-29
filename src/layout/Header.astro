@@ -1,0 +1,19 @@
+---
+import { SITE_TITLE } from '@/consts';
+import { isPathnameEqual } from '@/utils/url';
+---
+
+<header>
+  <nav class="flex gap-4 px-4 py-6">
+    <a
+      href="/"
+      data-active={isPathnameEqual(Astro.url.href, '/')}
+      class="data-[active=true]:underline">{SITE_TITLE}</a
+    >
+    <a
+      href="/blog"
+      data-active={isPathnameEqual(Astro.url.href, '/blog')}
+      class="data-[active=true]:underline">Blog</a
+    >
+  </nav>
+</header>

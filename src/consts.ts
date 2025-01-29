@@ -1,2 +1,2 @@
-export const SITE_TITLE = 'antenas0800';
-export const SITE_DESCRIPTION = 'webarchive!';
+export const SITE_TITLE = 'antenas 0800';
+export const SITE_DESCRIPTION = "antena's webarchive!";
