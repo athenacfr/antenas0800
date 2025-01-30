@@ -7,13 +7,15 @@ import { isPathnameEqual } from '@/utils/url';
   <nav class="flex gap-4 px-4 py-6">
     <a
       href="/"
+      data-underline
       data-active={isPathnameEqual(Astro.url.href, '/')}
       class="data-[active=true]:underline">{SITE_TITLE}</a
     >
     <a
-      href="/blog"
-      data-active={isPathnameEqual(Astro.url.href, '/blog')}
-      class="data-[active=true]:underline">Blog</a
+      href="/grafia"
+      data-underline
+      data-active={isPathnameEqual(Astro.url.href, '/grafia')}
+      class="data-[active=true]:underline">grafia</a
     >
   </nav>
 </header>

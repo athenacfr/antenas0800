@@ -8,5 +8,6 @@
       }
     }
   ],
+  "astroSkipFrontmatter": true,
   "singleQuote": true
 }

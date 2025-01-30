@@ -1,0 +1,31 @@
+---
+import { getCollection, } from 'astro:content';
+import FormattedDate from '@/components/FormattedDate.astro';
+import Document from '@/layout/Document.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import { renderEntry } from '@/utils/collections';
+
+const Grafia = await renderEntry('site', 'grafia')
+
+const posts = (await getCollection('grafia')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<Document title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <div class="prose mb-4">
+    <Grafia />
+  </div>
+  <ul class="flex flex-col">
+    {
+      posts.map((post) => (
+        <a href={`/grafia/${post.id}/`}>
+          <li class="px-3 py-2 hover:bg-white/10">
+            <p class="font-medium">{post.data.title}</p>
+            <FormattedDate date={post.data.date} />
+          </li>
+        </a>
+      ))
+    }
+  </ul>
+</Document>

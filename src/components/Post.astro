@@ -2,13 +2,13 @@
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '@/components/FormattedDate.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'grafia'>['data'];
 
 const { title, date } = Astro.props;
 ---
 
 <article>
-  <div class="prose prose-invert mx-auto">
+  <div class="prose mx-auto">
     <FormattedDate date={date} />
     <h1>{title}</h1>
     <hr />
