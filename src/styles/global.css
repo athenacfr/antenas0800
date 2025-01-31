@@ -21,9 +21,24 @@
   --tw-prose-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-th-borders: oklch(0.446 0 0);
   --tw-prose-td-borders: oklch(0.373 0 0);
+
+  & {
+    max-width: 68ch;
+    * {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    pre {
+      border: 1px solid var(--tw-prose-hr);
+      border-radius: var(--radius-xl);
+      background-color: var(--color-black) !important;
+    }
+  }
 }
 
-a[data-underline]:hover,
-a[data-underline]:focus {
-  text-decoration: underline;
+@utility underline-link {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }

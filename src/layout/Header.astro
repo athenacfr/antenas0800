@@ -1,21 +1,21 @@
 ---
-import { SITE_TITLE } from '@/consts';
+import { PATHS, TITLES } from '@/consts';
 import { isPathnameEqual } from '@/utils/url';
 ---
 
 <header>
-  <nav class="flex gap-4 px-4 py-6">
+  <nav class="flex gap-4 px-8 py-6">
     <a
-      href="/"
-      data-underline
-      data-active={isPathnameEqual(Astro.url.href, '/')}
-      class="data-[active=true]:underline">{SITE_TITLE}</a
+      href={PATHS.index}
+      data-active={isPathnameEqual(Astro.url.href, PATHS.index)}
+      class="underline-link text-lg data-[active=true]:underline"
+      >{TITLES.index}</a
     >
     <a
-      href="/grafia"
-      data-underline
-      data-active={isPathnameEqual(Astro.url.href, '/grafia')}
-      class="data-[active=true]:underline">grafia</a
+      href={PATHS.grafia.index}
+      data-active={isPathnameEqual(Astro.url.href, PATHS.grafia.index)}
+      class="underline-link text-lg data-[active=true]:underline"
+      >{TITLES.grafia.index}</a
     >
   </nav>
 </header>

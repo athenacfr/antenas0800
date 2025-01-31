@@ -1,11 +1,13 @@
 ---
 import Document from '@/layout/Document.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import { DESCRIPTIONS, TITLES } from '@/consts';
 import { renderEntry } from '@/utils/collections';
 
 const Antenas = await renderEntry('site', 'antenas')
 ---
 
-<Document title={SITE_TITLE} description={SITE_DESCRIPTION} class="prose">
-  <Antenas />
+<Document title={TITLES.index} description={DESCRIPTIONS.index}>
+  <div class="prose">
+    <Antenas />
+  </div>
 </Document>

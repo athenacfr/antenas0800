@@ -9,9 +9,8 @@ const { title, date } = Astro.props;
 
 <article>
   <div class="prose mx-auto">
-    <FormattedDate date={date} />
+    <p><FormattedDate date={date} /></p>
     <h1>{title}</h1>
-    <hr />
     <slot />
   </div>
 </article>

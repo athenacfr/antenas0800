@@ -7,11 +7,14 @@ const site = defineCollection({
 
 const grafia = defineCollection({
   loader: glob({ base: './src/content/grafia', pattern: '**/*.{md,mdx}' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      thumbnail: image().optional(),
+      date: z.coerce.date(),
+      private: z.coerce.boolean().default(false),
+    }),
 });
 
 export const collections = { site, grafia };

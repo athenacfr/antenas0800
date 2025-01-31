@@ -2,7 +2,7 @@
 import { getCollection, } from 'astro:content';
 import FormattedDate from '@/components/FormattedDate.astro';
 import Document from '@/layout/Document.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '@/consts';
+import { DESCRIPTIONS, PATHS, TITLES } from '@/consts';
 import { renderEntry } from '@/utils/collections';
 
 const Grafia = await renderEntry('site', 'grafia')
@@ -12,7 +12,7 @@ const posts = (await getCollection('grafia')).sort(
 );
 ---
 
-<Document title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<Document title={TITLES.grafia.index}>
   <div class="prose mb-4">
     <Grafia />
   </div>
