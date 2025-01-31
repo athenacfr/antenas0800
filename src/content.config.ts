@@ -5,8 +5,8 @@ const site = defineCollection({
   loader: glob({ base: './src/content/site', pattern: '**/*.{md,mdx}' }),
 });
 
-const grafia = defineCollection({
-  loader: glob({ base: './src/content/grafia', pattern: '**/*.{md,mdx}' }),
+const arquivos = defineCollection({
+  loader: glob({ base: './src/content/arquivos', pattern: '**/*.{md,mdx}' }),
   schema: ({ image }) =>
     z.object({
       image: image().optional(),
@@ -21,4 +21,4 @@ const grafia = defineCollection({
     }),
 });
 
-export const collections = { site, grafia };
+export const collections = { site, arquivos };

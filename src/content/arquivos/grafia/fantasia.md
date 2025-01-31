@@ -2,6 +2,7 @@
 public: true
 date: 2023-06-10
 ---
+
 tudo é efêmero, eu queria ser etéreo. cansei-me de recordar e fantasiar.
 
 &nbsp;

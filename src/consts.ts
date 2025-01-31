@@ -1,16 +1,16 @@
 export const PATHS = {
   index: '/',
-  grafia: {
-    index: '/grafia',
-    post: (slug: string) => `/grafia/${slug}`,
+  arquivos: {
+    index: '/arquivos',
+    slug: (slug: string) => `/arquivos/${slug}`,
   },
 } as const;
 
 export const TITLES = {
   index: 'antenas',
-  grafia: {
-    index: 'grafia',
-    post: (title: string) => `grafia - ${title}`,
+  arquivos: {
+    index: 'arquivos',
+    slug: (title: string) => `arquivos - ${title}`,
   },
 } as const;
 

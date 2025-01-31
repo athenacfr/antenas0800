@@ -1,0 +1,26 @@
+---
+import { PATHS } from '@/consts';
+import { renderEntry } from '@/utils/collections';
+
+type Props = {
+  slugs: string[];
+};
+
+const { slugs } = Astro.props;
+
+const ArquivosMarkdown = await renderEntry('site', 'arquivos');
+
+---
+
+<div class="prose">
+  <ArquivosMarkdown />
+</div>
+<div class="flex flex-col">
+  {
+    slugs.map((slug) => (
+      <a class="underline-link" href={PATHS.arquivos.slug(slug)}>
+        {slug}
+      </a>
+    ))
+  }
+</div>

@@ -1,0 +1,52 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import Post from '@/components/Post.astro';
+import { PATHS, TITLES } from '@/consts';
+import Document from '@/layout/Document.astro';
+import { getCollectionSubpaths, parseEntry, renderEntry } from '@/utils/collections';
+import Arquivos from '@/components/Arquivos.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('arquivos', (post) => post.data.public)).map(
+    parseEntry,
+  );
+
+  const subpaths = getCollectionSubpaths(posts).concat('');
+
+  return [
+    ...posts.map((post) => ({
+      params: { slug: post.id },
+      props: { post },
+    })),
+    ...subpaths.map((subpath) => ({
+      params: { slug: subpath },
+      props: {
+        slugs: [
+          ...subpaths.filter(
+            (sub) => sub.startsWith(subpath) && sub !== subpath,
+          ),
+          ...posts
+            .filter((post) =>
+              `/${post.id}`.split('/').slice(-2)[0]===(subpath),
+            )
+            .map((post) => post.id),
+        ],
+      },
+    })),
+  ];
+}
+
+type Props = {
+  post?: CollectionEntry<'arquivos'>;
+  slugs?: string[];
+};
+
+const { post, slugs } = Astro.props;
+const slug = Astro.params.slug;
+
+---
+
+<Document title={slug ? TITLES.arquivos.slug(slug) : TITLES.arquivos.index}>
+  {slugs && <Arquivos slugs={slugs} />}
+  {post && <Post post={post} />}
+</Document>

@@ -1,18 +1,21 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry, CollectionKey } from 'astro:content';
 import FormattedDate from '@/components/FormattedDate.astro';
+import { render } from 'astro:content';
 
 type Props = {
-  post: CollectionEntry<'grafia'>;
+  post: CollectionEntry<CollectionKey>;
 };
 
 const { post } = Astro.props;
+const { Content } = await render(post)
+
 ---
 
 <article>
   <div class="prose mx-auto max-w-[68ch]">
     {post.data.date && <FormattedDate date={post.data.date} />}
     <h1>{post.id}</h1>
-    <slot />
+    <Content />
   </div>
 </article>
