@@ -15,7 +15,7 @@ const posts = R.pipe(
     subpath: post.id.split('/').slice(0, -1).join(' - '),
     post: post,
   })),
-  R.sortBy(({ post }) => post.data.date),
+  R.sortBy(({ post }) => -post.data.date),
   R.groupBy(({ subpath }) => subpath),
 );
 ---
