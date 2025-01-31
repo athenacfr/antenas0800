@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "biome check --fix --unsafe . && prettier --write --log-level=warn ."
+    "check": "biome check --write --unsafe .",
+    "postcheck": "prettier --write --log-level=warn ."
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.7",

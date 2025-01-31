@@ -16,7 +16,7 @@ const grafia = defineCollection({
           date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
           return date;
         })
-        .catch(new Date(0)),
+        .optional(),
       public: z.coerce.boolean().catch(false),
     }),
 });

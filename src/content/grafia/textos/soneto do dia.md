@@ -1,0 +1,22 @@
+---
+public: true
+date: 2022-12-05
+---
+
+o dia começou bem,
+a Dia mandou saudades!
+o dia estava zen,
+e a Dia a vontade.
+
+mal começou o dia,
+e tudo que erra errou
+a Dia já não condizia
+com o dia que ela criou.
+
+eu tento raiar também,
+do jeito ela raiou.
+mas a alegoria do poeta falhou.
+
+tendo ela na mente,
+penso no que sofri.
+final feliz seria aquele em que morri.
