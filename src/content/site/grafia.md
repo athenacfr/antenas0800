@@ -1,6 +1,6 @@
 # 📝 grafia
 
 você pode chamar isso de
-<span title="aka. binary log" class="font-medium">blog</span>
+<strong title="aka. binary log" >blog</strong>
 ou
-<span title="web arquivo da minha mente." class="font-medium">registro pessoal</span>.
+<strong title="web arquivo da minha mente." >registro pessoal</strong>.

@@ -3,31 +3,26 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import { render } from 'astro:content';
 import Post from '@/components/Post.astro';
 import Document from '@/layout/Document.astro';
-import { PATHS, TITLES } from '@/consts';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('grafia');
+  const posts = await getCollection('grafia', (post) => post.data.public);
+  
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,
   }));
 }
+
 type Props = CollectionEntry<'grafia'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Document
-  title={TITLES.grafia.post(post.data.title)}
-  description={post.data.description}
->
+<Document title={post.id}>
   <div class="h-full">
     <Post {...post.data}>
       <Content />
     </Post>
-  </div>
-  <div class="flex items-center justify-center p-4">
-    <a href={PATHS.grafia.index} class="underline-link">voltar para grafias</a>
   </div>
 </Document>

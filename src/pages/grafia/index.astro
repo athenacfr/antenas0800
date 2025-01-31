@@ -4,28 +4,46 @@ import FormattedDate from '@/components/FormattedDate.astro';
 import Document from '@/layout/Document.astro';
 import { DESCRIPTIONS, PATHS, TITLES } from '@/consts';
 import { renderEntry } from '@/utils/collections';
+import * as R from "remeda";
 
 const Grafia = await renderEntry('site', 'grafia')
 
-const posts = (await getCollection('grafia')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
-);
+const posts = R.pipe(
+  await getCollection('grafia', (post) => post.data.public),
+  R.map((post) => ({
+    title: post.id.split('/').splice(-1).join(' - '),
+    subpath: post.id.split('/').slice(0, -1).join(' - '),
+    post: post,
+  })),
+  R.sortBy(({ post }) => post.data.date),
+  R.groupBy(({ subpath }) => subpath),
+)
+
 ---
 
 <Document title={TITLES.grafia.index}>
   <div class="prose mb-4">
     <Grafia />
   </div>
-  <ul class="flex flex-col">
+  <div class="flex flex-col">
     {
-      posts.map((post) => (
-        <a href={`/grafia/${post.id}/`}>
-          <li class="px-3 py-2 hover:bg-white/10">
-            <p class="font-medium">{post.data.title}</p>
-            <FormattedDate date={post.data.date} />
-          </li>
-        </a>
+      R.map(R.entries(posts), ([key, group]) => (
+        <>
+          {key && (
+            <h2 class="my-2">
+              <strong>{key}</strong>
+            </h2>
+          )}
+          {R.map(group, ({ title, post }) => (
+            <a href={PATHS.grafia.post(post.id)}>
+              <div class="px-3 py-2 hover:bg-white/10">
+                <p class="font-medium">{title}</p>
+                <FormattedDate date={post.data.date} />
+              </div>
+            </a>
+          ))}
+        </>
       ))
     }
-  </ul>
+  </div>
 </Document>

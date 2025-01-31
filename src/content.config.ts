@@ -9,11 +9,15 @@ const grafia = defineCollection({
   loader: glob({ base: './src/content/grafia', pattern: '**/*.{md,mdx}' }),
   schema: ({ image }) =>
     z.object({
-      title: z.string(),
-      description: z.string(),
-      thumbnail: image().optional(),
-      date: z.coerce.date(),
-      private: z.coerce.boolean().default(false),
+      image: image().optional(),
+      date: z.coerce
+        .date()
+        .transform((date) => {
+          date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+          return date;
+        })
+        .catch(new Date(0)),
+      public: z.coerce.boolean().catch(false),
     }),
 });
 
