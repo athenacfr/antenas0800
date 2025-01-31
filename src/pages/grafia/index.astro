@@ -1,12 +1,12 @@
 ---
-import { getCollection, } from 'astro:content';
+import { getCollection } from 'astro:content';
 import FormattedDate from '@/components/FormattedDate.astro';
-import Document from '@/layout/Document.astro';
 import { DESCRIPTIONS, PATHS, TITLES } from '@/consts';
+import Document from '@/layout/Document.astro';
 import { renderEntry } from '@/utils/collections';
-import * as R from "remeda";
+import * as R from 'remeda';
 
-const Grafia = await renderEntry('site', 'grafia')
+const Grafia = await renderEntry('site', 'grafia');
 
 const posts = R.pipe(
   await getCollection('grafia', (post) => post.data.public),
@@ -17,8 +17,7 @@ const posts = R.pipe(
   })),
   R.sortBy(({ post }) => post.data.date),
   R.groupBy(({ subpath }) => subpath),
-)
-
+);
 ---
 
 <Document title={TITLES.grafia.index}>

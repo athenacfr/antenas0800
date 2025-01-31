@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
 
@@ -23,7 +23,7 @@
   --tw-prose-td-borders: oklch(0.373 0 0);
 
   & {
-    max-width: 68ch;
+    max-width: unset;
     * {
       margin-top: 0;
       margin-bottom: 0.5em;

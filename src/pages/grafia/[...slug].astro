@@ -6,7 +6,7 @@ import Document from '@/layout/Document.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('grafia', (post) => post.data.public);
-  
+
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,
@@ -21,7 +21,7 @@ const { Content } = await render(post);
 
 <Document title={post.id}>
   <div class="h-full">
-    <Post {...post.data}>
+    <Post post={post}>
       <Content />
     </Post>
   </div>

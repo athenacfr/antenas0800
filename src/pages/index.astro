@@ -1,9 +1,9 @@
 ---
-import Document from '@/layout/Document.astro';
 import { DESCRIPTIONS, TITLES } from '@/consts';
+import Document from '@/layout/Document.astro';
 import { renderEntry } from '@/utils/collections';
 
-const Antenas = await renderEntry('site', 'antenas')
+const Antenas = await renderEntry('site', 'antenas');
 ---
 
 <Document title={TITLES.index} description={DESCRIPTIONS.index}>

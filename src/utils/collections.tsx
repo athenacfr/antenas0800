@@ -1,4 +1,4 @@
-import { getEntry, render, type DataEntryMap } from 'astro:content';
+import { type DataEntryMap, getEntry, render } from 'astro:content';
 
 export const renderEntry = async <
   C extends keyof DataEntryMap,
