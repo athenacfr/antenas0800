@@ -9,6 +9,8 @@ dont you think i wanted to kill my self
 
 it would be so unnatural if i didnt
 
+&nbsp;
+
 i mean
 
 im composed by decomposition
@@ -19,7 +21,11 @@ im food for mushrooms
 
 that kind of stuff
 
+&nbsp;
+
 anyway
+
+&nbsp;
 
 have you ever imagened dying with you face on a pizza
 
