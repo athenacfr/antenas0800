@@ -8,14 +8,12 @@ import { isPathnameEqual } from '@/utils/url';
     <a
       href={PATHS.index}
       data-active={isPathnameEqual(Astro.url.href, PATHS.index)}
-      class="underline-link text-lg data-[active=true]:underline"
-      >{TITLES.index}</a
+      class="text-lg data-[active=true]:underline">{TITLES.index}</a
     >
     <a
       href={PATHS.arquivos.index}
       data-active={isPathnameEqual(Astro.url.href, PATHS.arquivos.index)}
-      class="underline-link text-lg data-[active=true]:underline"
-      >{TITLES.arquivos.index}</a
+      class="text-lg data-[active=true]:underline">{TITLES.arquivos.index}</a
     >
   </nav>
 </header>
