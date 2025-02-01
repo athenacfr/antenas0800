@@ -21,15 +21,15 @@ export async function getStaticPaths() {
       props: { post },
     })),
     ...subpaths.map((subpath) => ({
-      params: { slug: subpath },
+      params: { slug: `/${subpath}` },
       props: {
         slugs: [
           ...subpaths.filter(
             (sub) => sub.startsWith(subpath) && sub !== subpath,
           ),
           ...posts
-            .filter((post) => `/${post.id}`.split('/').slice(-2)[0] === subpath)
-            .toSorted((post) => -(post.data.date?.getTime() ?? 0))
+            .filter((post) => post.id.split('/').slice(-2)[0] === subpath)
+            .toSorted((post) => post.data.date?-post.data.date : 0)
             .map((post) => post.id),
         ],
       },
