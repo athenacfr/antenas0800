@@ -28,7 +28,7 @@ export async function getStaticPaths() {
             (sub) => sub.startsWith(subpath) && sub !== subpath,
           ),
           ...posts
-            .filter((post) => post.id.split('/').slice(-2)[0] === subpath)
+            .filter((post) => `/${post.id}`.split('/').slice(-2)[0] === subpath)
             .toSorted((post) => post.data.date?-post.data.date : 0)
             .map((post) => post.id),
         ],

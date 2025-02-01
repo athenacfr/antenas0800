@@ -10,7 +10,7 @@ export const TITLES = {
   index: 'antenas',
   arquivos: {
     index: 'arquivos',
-    slug: (title: string) => `arquivos - ${title}`,
+    slug: (title: string) => `arquivos · ${title}`,
   },
 } as const;
 
