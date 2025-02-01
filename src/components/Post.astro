@@ -1,15 +1,14 @@
 ---
 import type { CollectionEntry, CollectionKey } from 'astro:content';
-import FormattedDate from '@/components/FormattedDate.astro';
 import { render } from 'astro:content';
+import FormattedDate from '@/components/FormattedDate.astro';
 
 type Props = {
   post: CollectionEntry<CollectionKey>;
 };
 
 const { post } = Astro.props;
-const { Content } = await render(post)
-
+const { Content } = await render(post);
 ---
 
 <article>

@@ -1,15 +1,17 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
+import Arquivos from '@/components/Arquivos.astro';
 import Post from '@/components/Post.astro';
 import { PATHS, TITLES } from '@/consts';
 import Document from '@/layout/Document.astro';
-import { getCollectionSubpaths, parseEntry, renderEntry } from '@/utils/collections';
-import Arquivos from '@/components/Arquivos.astro';
+import {
+  getCollectionSubpaths,
+  parseEntry,
+  renderEntry,
+} from '@/utils/collections';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('arquivos', (post) => post.data.public)).map(
-    parseEntry,
-  );
+  const posts = await getCollection('arquivos', (post) => post.data.public);
 
   const subpaths = getCollectionSubpaths(posts).concat('');
 
@@ -26,9 +28,8 @@ export async function getStaticPaths() {
             (sub) => sub.startsWith(subpath) && sub !== subpath,
           ),
           ...posts
-            .filter((post) =>
-              `/${post.id}`.split('/').slice(-2)[0]===(subpath),
-            )
+            .filter((post) => `/${post.id}`.split('/').slice(-2)[0] === subpath)
+            .toSorted((post) => -(post.data.date?.getTime() ?? 0))
             .map((post) => post.id),
         ],
       },
@@ -43,7 +44,6 @@ type Props = {
 
 const { post, slugs } = Astro.props;
 const slug = Astro.params.slug;
-
 ---
 
 <Document title={slug ? TITLES.arquivos.slug(slug) : TITLES.arquivos.index}>
