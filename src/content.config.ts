@@ -1,12 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const site = defineCollection({
-  loader: glob({ base: './src/content/site', pattern: '**/*.{md,mdx}' }),
-});
-
-const arquivos = defineCollection({
-  loader: glob({ base: './src/content/arquivos', pattern: '**/*.{md,mdx}' }),
+const antenas = defineCollection({
+  loader: glob({ base: './src/content/antenas', pattern: '**/*.{md,mdx}' }),
   schema: ({ image }) =>
     z.object({
       image: image().optional(),
@@ -21,4 +17,4 @@ const arquivos = defineCollection({
     }),
 });
 
-export const collections = { site, arquivos };
+export const collections = { antenas };

@@ -1,6 +1,5 @@
 ---
 public: true
-date: 2022-12-05
 ---
 
 aqui? o tempo continua o mesmo

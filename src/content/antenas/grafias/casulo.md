@@ -1,6 +1,5 @@
 ---
 public: false
-date: 2024-08-27
 ---
 
 to vivendo num casulo desde os doze anos

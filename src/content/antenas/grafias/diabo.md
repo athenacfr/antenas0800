@@ -1,6 +1,5 @@
 ---
 public: false
-date: 2022-12-05
 ---
 
 eu acordo todo dia

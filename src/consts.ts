@@ -1,17 +1,11 @@
 export const PATHS = {
   index: '/',
-  arquivos: {
-    index: '/arquivos',
-    slug: (slug: string) => `/arquivos/${slug}`,
-  },
+  slug: (slug: string) => `/${slug}`,
 } as const;
 
 export const TITLES = {
   index: 'antenas',
-  arquivos: {
-    index: 'arquivos',
-    slug: (title: string) => `arquivos · ${title}`,
-  },
+  slug: (title: string) => `antenas · ${title}`,
 } as const;
 
 export const DESCRIPTIONS = {

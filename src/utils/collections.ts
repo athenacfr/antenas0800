@@ -16,7 +16,7 @@ export const renderEntry = async <
 ) => {
   const entry = await getEntry(collection, id);
 
-  if (!entry) throw new Error('Entry not found');
+  if (!entry) return null;
 
   const { Content } = await render(entry);
 

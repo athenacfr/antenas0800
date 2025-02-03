@@ -1,42 +1,29 @@
-@import 'tailwindcss';
-
-@plugin "@tailwindcss/typography";
-
-@utility prose {
-  --tw-prose-body: oklch(0.872 0 0);
-  --tw-prose-headings: #fff;
-  --tw-prose-lead: oklch(0.707 0 0);
-  --tw-prose-links: #fff;
-  --tw-prose-bold: #fff;
-  --tw-prose-counters: oklch(0.707 0 0);
-  --tw-prose-bullets: oklch(0.446 0 0);
-  --tw-prose-hr: oklch(0.373 0 0);
-  --tw-prose-quotes: oklch(0.967 0 0);
-  --tw-prose-quote-borders: oklch(0.373 0 0);
-  --tw-prose-captions: oklch(0.707 0 0);
-  --tw-prose-kbd: #fff;
-  --tw-prose-kbd-shadows: 255 255 255;
-  --tw-prose-code: #fff;
-  --tw-prose-pre-code: oklch(0.872 0 0);
-  --tw-prose-pre-bg: rgb(0 0 0 / 50%);
-  --tw-prose-th-borders: oklch(0.446 0 0);
-  --tw-prose-td-borders: oklch(0.373 0 0);
-
-  & {
-    max-width: unset;
-    * {
-      margin-top: 0;
-      margin-bottom: 0.5em;
-    }
-    pre {
-      border: 1px solid var(--tw-prose-hr);
-      border-radius: var(--radius-xl);
-      background-color: var(--color-black) !important;
-    }
-  }
-}
+@import 'tailwindcss/theme.css';
+@import 'tailwindcss/utilities.css';
 
 @layer base {
+  * {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  pre {
+    background-color: transparent !important;
+  }
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
   a:hover,
   a:focus {
     text-decoration: underline;

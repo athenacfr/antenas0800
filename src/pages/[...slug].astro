@@ -1,17 +1,16 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
-import Arquivos from '@/components/Arquivos.astro';
+import PostList from '@/components/PostList.astro';
 import Post from '@/components/Post.astro';
 import { PATHS, TITLES } from '@/consts';
 import Document from '@/layout/Document.astro';
 import {
   getCollectionSubpaths,
-  parseEntry,
-  renderEntry,
 } from '@/utils/collections';
+import { renderEntry } from '@/utils/collections';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('arquivos', (post) => post.data.public);
+  const posts = await getCollection('antenas', (post) => post.data.public);
 
   const subpaths = getCollectionSubpaths(posts).concat('');
 
@@ -23,30 +22,34 @@ export async function getStaticPaths() {
     ...subpaths.map((subpath) => ({
       params: { slug: `/${subpath}` },
       props: {
-        slugs: [
-          ...subpaths.filter(
+        paths: subpaths.filter(
             (sub) => sub.startsWith(subpath) && sub !== subpath,
           ),
-          ...posts
+        posts: posts
             .filter((post) => `/${post.id}`.split('/').slice(-2)[0] === subpath)
             .toSorted((post) => post.data.date?-post.data.date : 0)
-            .map((post) => post.id),
-        ],
       },
     })),
   ];
 }
 
 type Props = {
-  post?: CollectionEntry<'arquivos'>;
-  slugs?: string[];
+  post?: CollectionEntry<'antenas'>;
+  posts?: CollectionEntry<'antenas'>[];
+  paths?: string[];
 };
 
-const { post, slugs } = Astro.props;
-const slug = Astro.params.slug;
+const { post,posts,paths } = Astro.props;
+
+const Content = await renderEntry('antenas', `${Astro.url.pathname}/__info`.replace('//', '/').slice(1));
 ---
 
-<Document title={slug ? TITLES.arquivos.slug(slug) : TITLES.arquivos.index}>
-  {slugs && <Arquivos slugs={slugs} />}
+<Document
+  title={Astro.params.slug ? TITLES.slug(Astro.params.slug) : TITLES.index}
+>
+  <div class="mb-2">
+    {Content && <Content />}
+  </div>
+  {(posts || paths) && <PostList posts={posts} paths={paths} />}
   {post && <Post post={post} />}
 </Document>

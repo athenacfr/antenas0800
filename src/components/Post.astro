@@ -12,9 +12,8 @@ const { Content } = await render(post);
 ---
 
 <article>
-  <div class="prose mx-auto max-w-[68ch]">
-    {post.data.date && <FormattedDate date={post.data.date} />}
-    <h1>{post.id}</h1>
-    <Content />
-  </div>
+  {post.data.date && <FormattedDate date={post.data.date} />}
+  {post.data.date && <br />}
+  {post.data.date && <br />}
+  <Content />
 </article>

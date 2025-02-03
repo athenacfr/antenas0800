@@ -1,19 +1,18 @@
 ---
 import { PATHS, TITLES } from '@/consts';
-import { isPathnameEqual } from '@/utils/url';
+
+const paths = Astro.url.pathname.split('/').slice(1,-1)
 ---
 
 <header>
-  <nav class="flex gap-4 px-8 py-6">
-    <a
-      href={PATHS.index}
-      data-active={isPathnameEqual(Astro.url.href, PATHS.index)}
-      class="text-lg data-[active=true]:underline">{TITLES.index}</a
-    >
-    <a
-      href={PATHS.arquivos.index}
-      data-active={isPathnameEqual(Astro.url.href, PATHS.arquivos.index)}
-      class="text-lg data-[active=true]:underline">{TITLES.arquivos.index}</a
-    >
+  <nav class="my-2 flex gap-3">
+    <a href={PATHS.index}>{TITLES.index}</a>
+    {
+      paths.map((path, index) => (
+        <a href={`/${paths.slice(0, index + 1).join('/')}`}>
+          {decodeURI(path)}
+        </a>
+      ))
+    }
   </nav>
 </header>

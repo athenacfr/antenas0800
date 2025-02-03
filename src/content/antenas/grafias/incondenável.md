@@ -1,6 +1,6 @@
 ---
+date: 2023-11-27
 public: true
-date: 2024-08-27
 ---
 
 tudo oq eu queria era uma existência incondenável

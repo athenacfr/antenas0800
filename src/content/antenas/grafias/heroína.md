@@ -1,6 +1,6 @@
 ---
+date: 2022-12-05
 public: true
-date: 2024-08-27
 ---
 
 as vezes perco noção e não sei discernir o que é real
