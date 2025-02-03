@@ -11,6 +11,7 @@ public: true
 - [fluid cognition](https://en.wikipedia.org/wiki/Fluid_and_crystallized_intelligence)
 - [meta-ironia](https://youtu.be/nsuSveDAlpI)
 - [chediak](https://chediak.bandcamp.com/)
+- [cícero](https://youtu.be/hIWjXl37u8Q)
 - [vitor brauer](https://vitorbrauer.bandcamp.com/)
 - [paola rodrigues](https://paolarodrigues.bandcamp.com/)
 - [mafius](https://intertwined.substack.com/)

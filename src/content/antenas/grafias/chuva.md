@@ -3,80 +3,80 @@ public: true
 date: 2023-04-10
 ---
 
-As nossas madrugadas foram muito mais reais do que qualquer coisa
+as nossas madrugadas foram muito mais reais do que qualquer coisa
 
-Não importa o quanto eu tente fazer isso de novo
+não importa o quanto eu tente fazer isso de novo
 
-Sem você não é a mesma coisa
+sem você não é a mesma coisa
 
-Não é o mesmo estando só
+não é o mesmo estando só
 
-Sem você não é a mesma coisa
-
-&nbsp;
-
-Nossas madrugadas eram reais
-
-Eu existia
-
-Não me sentia mal por dormir mais tarde
-
-Não me sentia mal por acordar cansado
-
-Não me sentia mal por não ter feito nada
-
-Eu não me sentia mal.
+sem você não é a mesma coisa
 
 &nbsp;
 
-E quando chovia…
+nossas madrugadas eram reais
 
-Solitude em compania é sublime
+eu existia
 
-É o mais puro estado da realidade
+não me sentia mal por dormir mais tarde
 
-É tudo que eu peço
+não me sentia mal por acordar cansado
 
-Mas nada é igual sem você
+não me sentia mal por não ter feito nada
 
-&nbsp;
-
-Eu não sei se um dia vai ser
-
-E nem sei se quero que seja
-
-Mas nada disso importa
-
-Porque toda madrugada, durante a chuva, eu olho pela janela
-
-Eu penso no que tudo isso poderia ter se tornado
+eu não me sentia mal.
 
 &nbsp;
 
-Eu amo quando chove
+e quando chovia…
 
-É um refinamento constante
+solitude em compania é sublime
 
-Eu amo o som das luzes
+é o mais puro estado da realidade
 
-Elas falam comigo, mas nunca de mim
+é tudo que eu peço
 
-Eu amo quando chove
-
-&nbsp;
-
-Mesmo estando rodiado, eu me sinto só
-
-As luzes artificiais se tornam a realidade
-
-Não que isso seja tudo que importa
-
-Mas pro momento é tudo que importa
+mas nada é igual sem você
 
 &nbsp;
 
-Eu não penso em mais nada
+eu não sei se um dia vai ser
 
-Não preciso de mais nada
+e nem sei se quero que seja
 
-Só da chuva
+mas nada disso importa
+
+porque toda madrugada, durante a chuva, eu olho pela janela
+
+eu penso no que tudo isso poderia ter se tornado
+
+&nbsp;
+
+eu amo quando chove
+
+é um refinamento constante
+
+eu amo o som das luzes
+
+elas falam comigo, mas nunca de mim
+
+eu amo quando chove
+
+&nbsp;
+
+mesmo estando rodiado, eu me sinto só
+
+as luzes artificiais se tornam a realidade
+
+não que isso seja tudo que importa
+
+mas pro momento é tudo que importa
+
+&nbsp;
+
+eu não penso em mais nada
+
+não preciso de mais nada
+
+só da chuva
