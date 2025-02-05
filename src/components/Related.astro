@@ -1,0 +1,21 @@
+---
+import { PATHS } from '@/consts';
+import type { ExtendedCollectionEntry } from '@/utils/collections';
+
+type Props = {
+  related: ExtendedCollectionEntry['related']
+}
+
+const { related } = Astro.props;
+
+---
+
+<ul>
+  {
+    related.map(({ path, name }) => (
+      <li>
+        <a href={PATHS.slug(path)}>{name}</a>
+      </li>
+    ))
+  }
+</ul>

@@ -1,55 +1,39 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import PostList from '@/components/PostList.astro';
+import { getCollection } from 'astro:content';
+import Related from '@/components/Related.astro';
 import Post from '@/components/Post.astro';
-import { PATHS, TITLES } from '@/consts';
+import { TITLES } from '@/consts';
 import Document from '@/layout/Document.astro';
 import {
-  getCollectionSubpaths,
+  extendCollection,
+  type ExtendedCollectionEntry,
 } from '@/utils/collections';
-import { renderEntry } from '@/utils/collections';
 
 export async function getStaticPaths() {
   const posts = await getCollection('antenas', (post) => post.data.public);
 
-  const subpaths = getCollectionSubpaths(posts).concat('');
+  const extendedPosts = extendCollection(posts);
 
-  return [
-    ...posts.map((post) => ({
-      params: { slug: post.id },
-      props: { post },
-    })),
-    ...subpaths.map((subpath) => ({
-      params: { slug: `/${subpath}` },
-      props: {
-        paths: subpaths.filter(
-            (sub) => sub.startsWith(subpath) && sub !== subpath,
-          ),
-        posts: posts
-            .filter((post) => `/${post.id}`.split('/').slice(-2)[0] === subpath)
-            .toSorted((post) => post.data.date?-post.data.date : 0)
-      },
-    })),
-  ];
+  return extendedPosts.map((data) => ({
+    params: { slug: data.path || '/' },
+    props: data,
+  }));
 }
 
-type Props = {
-  post?: CollectionEntry<'antenas'>;
-  posts?: CollectionEntry<'antenas'>[];
-  paths?: string[];
-};
+type Props = ExtendedCollectionEntry;
 
-const { post,posts,paths } = Astro.props;
-
-const Content = await renderEntry('antenas', `${Astro.url.pathname}/__info`.replace('//', '/').slice(1));
+const { post, related } = Astro.props;
 ---
 
 <Document
   title={Astro.params.slug ? TITLES.slug(Astro.params.slug) : TITLES.index}
 >
-  <div class="mb-2">
-    {Content && <Content />}
-  </div>
-  {(posts || paths) && <PostList posts={posts} paths={paths} />}
-  {post && <Post post={post} />}
+  {
+    post && (
+      <div class="mb-2">
+        <Post post={post} />
+      </div>
+    )
+  }
+  {related && <Related related={related} />}
 </Document>
