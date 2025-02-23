@@ -14,20 +14,13 @@ infeliz é pensar que respostas existem. <br/>
 o mérito existe junto da noite ao dia e da melancolia. <br/>
 eu sinto como se eu fosse essas músicas. acho que sou tudo isso de alguma forma. <br/>
 
-recordei-me da tal hiperfixação que já escreveu sobre uma tal poetiza patética. <br/>
-afinal quem diabos se considera poeta no século XXI? <br/>
-apenas embarcações sem consciência interpretando o papel de ser o que dizem, eu acho. <br/>
-
 não importa o horário desde que você se sinta à noite. <br/>
 desde que a chuva o contorne, dançando quase a cambalear. <br/>
-é nesse século de 2020 que você se torna um pouco mais livre. <br/>
+nessa década de 2020, você se torna um pouco mais livre. <br/>
 toda a liberdade equivocadamente dada à você começa a criar uma forma reluzente. <br/>
 ao pisar na lama suja é refletida a alma cansada e alegre que você se tornou. <br/>
 o tempo fez esquecer. <br/>
 as atrizes e cicatrizes que já se apresentaram não se apresentarão mais. <br/>
-
-esse pensamento sempre volta, uma corda em volta do pescoço, ou será que é um cordão? <br/>
-semântica não importa diante disso tudo. <br/>
 
 seu chaveiro sempre vai girar em volta de seu dedo. <br/>
 seu moletom velho e surrado sempre vai te envolver como se não houvesse tempo. <br/>

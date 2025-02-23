@@ -3,7 +3,7 @@ year: 2023
 public: true
 ---
 
-tudo oq eu queria era uma existência incondenável <br/>
+eu queria era uma existência incondenável <br/>
 intocável impensável incontestável <br/>
 mas todos os trejeitos foram prejulgados <br/>
 categorizados, mortos e sepultados <br/>
@@ -11,12 +11,12 @@ categorizados, mortos e sepultados <br/>
 frente fria infinita, sensação falsa e temporária de conforto <br/>
 que em seu turno de ação se demonstra ineficaz <br/>
 não existe conforto, não há paz. <br/>
-não adianta ter de acordar e sentir torto <br/>
+quem disse isso, não te ama. <br/>
 
-quem te disse isso, não te ama. <br/>
-é sobre o abuso que é inerente à existência. <br/>
-lembre daqueles que te falaram sobre damas. <br/>
+tal vida fraca e obsoleta. <br/>
+tendenciosamente direcionada à desistência. <br/>
+meias verdades se tornaram lazer. <br/>
 
-uma tal vida fraca e obsoleta. <br/>
-tendenciosamente direcionadas à desistência. <br/>
-essas meias verdades se tornaram lazer. <br/>
+rejeite o abuso inerente à existência <br/>
+rejeite aqueles que tentam te explicar <br/>
+de que adianta acordar e se sentir torta? <br/>
