@@ -1,5 +1,5 @@
 ---
-date: 2023-11-27
+year: 2023
 public: true
 ---
 

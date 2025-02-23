@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 
 type Props = ExtendedCollectionEntry;
 
-const { post, related } = Astro.props;
+const { name, post, related } = Astro.props;
 ---
 
 <Document
@@ -31,7 +31,7 @@ const { post, related } = Astro.props;
   {
     post && (
       <div class="mb-2">
-        <Post post={post} />
+        <Post name={name} post={post} />
       </div>
     )
   }

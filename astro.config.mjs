@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://antenas0800.com',
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: 'viewport',
+    defaultStrategy: 'hover',
   },
   markdown: {
     shikiConfig: { theme: 'github-dark-high-contrast' },

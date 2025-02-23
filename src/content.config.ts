@@ -3,15 +3,9 @@ import { glob } from 'astro/loaders';
 
 const antenas = defineCollection({
   loader: glob({ base: './src/content/antenas', pattern: '**/*.{md,mdx}' }),
-  schema: ({ image }) =>
+  schema: () =>
     z.object({
-      date: z.coerce
-        .date()
-        .transform((date) => {
-          date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
-          return date;
-        })
-        .optional(),
+      year: z.coerce.number().int().catch(2000),
       public: z.coerce.boolean().catch(false),
     }),
 });

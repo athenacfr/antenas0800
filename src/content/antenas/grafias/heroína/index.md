@@ -1,5 +1,5 @@
 ---
-date: 2022-12-05
+year: 2022
 public: true
 ---
 
@@ -11,7 +11,7 @@ temo tentar a tentativa de viver e falhar<br/>
 chuva doce, forte e ácida<br/>
 heroína feita só pra mim?<br/>
 era de se esperar um risco tão viciante<br/>
-quero te repetir até cansar<br/>
+quero te existir até cansar<br/>
 
 temo tanta coisa ao mesmo tempo<br/>
 parece que faz tempo que não sinto nada<br/>
@@ -24,6 +24,6 @@ talvez até pelo mesmo início<br/>
 amo fazer valer cada tentativa ineficaz<br/>
 
 me dói tanto saber que a telha<br/>
-só se quebra quando o tempo passa<br/>
-quando velha se parte ao meio<br/>
-sem nunca ter mudado nada<br/>
+quebra com o passar do tempo<br/>
+se parte ao meio quando velha<br/>
+sem nunca ter mudado em nada<br/>

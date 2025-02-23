@@ -1,6 +1,6 @@
 ---
+year: 2023
 public: true
-date: 2023-11-11
 ---
 
 eu sempre penso "quanto barulho" <br/>

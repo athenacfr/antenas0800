@@ -1,19 +1,17 @@
 ---
-import type { CollectionEntry, CollectionKey } from 'astro:content';
+import type { ExtendedCollectionEntry } from '@/utils/collections';
 import { render } from 'astro:content';
-import FormattedDate from '@/components/FormattedDate.astro';
 
 type Props = {
-  post: CollectionEntry<CollectionKey>;
+  name: string
+  post: NonNullable<ExtendedCollectionEntry['post']>
 };
 
-const { post } = Astro.props;
+const { name, post } = Astro.props;
 const { Content } = await render(post);
 ---
 
 <article class="prose">
-  {post.data.date && <FormattedDate date={post.data.date} />}
-  {post.data.date && <br />}
-  {post.data.date && <br />}
+  <p>{name}</p>
   <Content />
 </article>

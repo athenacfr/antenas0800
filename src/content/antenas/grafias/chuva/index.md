@@ -1,6 +1,6 @@
 ---
+year: 2023
 public: true
-date: 2023-04-10
 ---
 
 eu amo quando chove <br/>
