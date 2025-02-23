@@ -44,14 +44,16 @@
 
     img,
     video {
+      object-fit: contain;
+
       display: block;
       margin-inline: auto;
       margin-block: 16px;
 
-      width: 50vw;
+      width: fit-content;
       height: fit-content;
+      max-width: 640px;
       max-height: 640px;
-      object-fit: contain;
     }
   }
 }
