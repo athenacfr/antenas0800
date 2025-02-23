@@ -6,6 +6,10 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://antenas0800.com',
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport',
+  },
   markdown: {
     shikiConfig: { theme: 'github-dark-high-contrast' },
   },
