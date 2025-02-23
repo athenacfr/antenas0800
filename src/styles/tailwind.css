@@ -1,10 +1,14 @@
 @import 'tailwindcss/theme.css';
 @import 'tailwindcss/utilities.css';
 
+@theme {
+  --font-serif: 'Source Serif 4', 'Noto Emoji', serif;
+}
+
 @layer base {
   * {
     margin: 0;
-    font-family: 'Source Serif 4', 'Noto Emoji', serif;
+    font-family: var(---font-serif);
     font-optical-sizing: auto;
   }
 

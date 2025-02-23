@@ -1,5 +1,8 @@
 ---
-import '@/styles/global.css';
+import '@fontsource-variable/noto-emoji';
+import '@fontsource-variable/source-serif-4';
+import '@/styles/tailwind.css';
+
 import { DESCRIPTIONS, TITLES } from '@/consts';
 import Header from '@/layout/Header.astro';
 import type { HTMLAttributes } from 'astro/types';
@@ -37,18 +40,6 @@ const {
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL} />
-
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Primary Meta Tags -->
     <title>{title}</title>
