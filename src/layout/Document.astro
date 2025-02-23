@@ -73,7 +73,9 @@ const {
   <body class="min-h-screen bg-black text-neutral-100">
     <main class:list={['h-full px-8 pt-2 pb-4', className]} {...props}>
       <Header />
-      <slot />
+      <div class="mx-auto w-full max-w-4xl">
+        <slot />
+      </div>
     </main>
   </body>
 </html>
