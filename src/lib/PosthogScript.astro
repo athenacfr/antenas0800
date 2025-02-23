@@ -1,0 +1,11 @@
+<script>
+  import { PUBLIC_POSTHOG_HOST, PUBLIC_POSTHOG_KEY } from 'astro:env/client';
+  import posthog from 'posthog-js';
+
+  if (PUBLIC_POSTHOG_KEY) {
+    posthog.init(PUBLIC_POSTHOG_KEY, {
+      api_host: PUBLIC_POSTHOG_HOST,
+      person_profiles: 'always',
+    });
+  }
+</script>

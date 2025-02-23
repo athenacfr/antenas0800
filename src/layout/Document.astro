@@ -2,10 +2,12 @@
 import '@fontsource/noto-emoji';
 import '@fontsource/source-serif-4';
 import '@/styles/tailwind.css';
+ 
 
 import { DESCRIPTIONS, TITLES } from '@/consts';
 import Header from '@/layout/Header.astro';
 import type { HTMLAttributes } from 'astro/types';
+import PosthogScript from '@/lib/PosthogScript.astro';
 
 interface Props extends HTMLAttributes<'main'> {
   title?: string;
@@ -59,6 +61,8 @@ const {
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
+
+    <PosthogScript />
   </head>
 
   <body class="min-h-screen bg-black text-neutral-100">

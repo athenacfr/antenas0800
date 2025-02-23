@@ -1,7 +1,8 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
+import { z } from 'astro/zod';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,5 +17,20 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
+  },
+  env: {
+    schema: {
+      PUBLIC_POSTHOG_KEY: envField.string({
+        context: 'client',
+        access: 'public',
+        optional: true,
+      }),
+      PUBLIC_POSTHOG_HOST: envField.string({
+        context: 'client',
+        access: 'public',
+        optional: true,
+        default: 'https://us.i.posthog.com',
+      }),
+    },
   },
 });
