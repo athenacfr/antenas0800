@@ -17,10 +17,10 @@ importers:
       '@astrojs/sitemap':
         specifier: 3.2.1
         version: 3.2.1
-      '@fontsource-variable/noto-emoji':
+      '@fontsource/noto-emoji':
         specifier: 5.1.1
         version: 5.1.1
-      '@fontsource-variable/source-serif-4':
+      '@fontsource/source-serif-4':
         specifier: 5.1.1
         version: 5.1.1
       '@tailwindcss/vite':
@@ -306,11 +306,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/noto-emoji@5.1.1':
-    resolution: {integrity: sha512-+eDYcqNoitR/BFsxRzqIf3Qc3KVgc4HwqAjdhKay98TH6zXH807hcMP6zHsHxHMjOIO1uX6wMMZtuDjlVJwNCw==}
+  '@fontsource/noto-emoji@5.1.1':
+    resolution: {integrity: sha512-cKA/NMmD36uZ1FPd6hxUNNblQrnGWpqNZ9RDsBuuwfiOrFKgVgQ52gag3tlPNhzEr758X3kRP2YSGKMyN+AuQQ==}
 
-  '@fontsource-variable/source-serif-4@5.1.1':
-    resolution: {integrity: sha512-0ukcJ9U+Ravi38mwwUs3xyd8YdArMBz9cCtK8v6rRMO7Q6myJW1vzz0SLAI3Z6/pzcqsqIYo1ImUqKmOrw4cVw==}
+  '@fontsource/source-serif-4@5.1.1':
+    resolution: {integrity: sha512-ziTw0MFHaLlVMhuk8nFytaeCU2+K5UApjoaX2OZHwyz+a9Pq6bx1ZW7c2f3xIdiuvDgPBqBB+kqgjOapAG4Waw==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -2199,9 +2199,9 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@fontsource-variable/noto-emoji@5.1.1': {}
+  '@fontsource/noto-emoji@5.1.1': {}
 
-  '@fontsource-variable/source-serif-4@5.1.1': {}
+  '@fontsource/source-serif-4@5.1.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
