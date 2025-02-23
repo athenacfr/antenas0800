@@ -3,46 +3,27 @@ date: 2022-12-05
 public: true
 ---
 
-as vezes perco noção e não sei discernir o que é real
+as vezes perco noção e não sei discernir o que é real<br/>
+me perco na tentativa de viver o ideal<br/>
+não sei o quão egoísta posso ser antes de colapsar<br/>
+temo tentar a tentativa de viver e falhar<br/>
 
-me perco na tentativa de viver o ideal
+chuva doce, forte e ácida<br/>
+heroína feita só pra mim?<br/>
+era de se esperar um risco tão viciante<br/>
+quero te repetir até cansar<br/>
 
-não sei o quão egoísta posso ser antes de colapsar
+temo tanta coisa ao mesmo tempo<br/>
+parece que faz tempo que não sinto nada<br/>
+por isso, sinto medo de perder o que sinto<br/>
+e esse medo é o que me mantém sentindo<br/>
 
-temo tentar a tentativa de viver e falhar
+é esse medo que me traz a paz<br/>
+a possibilidade de recomeçar<br/>
+talvez até pelo mesmo início<br/>
+amo fazer valer cada tentativa ineficaz<br/>
 
-<br/>
-chuva doce, forte e ácida
-
-heroína feita só pra mim?
-
-era de se esperar um risco tão viciante
-
-quero te repetir até cansar
-
-<br/>
-temo tanta coisa ao mesmo tempo
-
-parece que faz tempo que não sinto nada
-
-por isso, sinto medo de perder o que sinto
-
-e esse medo é o que me mantém sentindo
-
-<br/>
-é esse medo que me traz a paz
-
-a possibilidade de recomeçar
-
-talvez até pelo mesmo início
-
-amo fazer valer cada tentativa ineficaz
-
-<br/>
-me dói tanto saber que a telha
-
-só se quebra quando o tempo passa
-
-quando velha se parte ao meio
-
-sem nunca ter mudado nada
+me dói tanto saber que a telha<br/>
+só se quebra quando o tempo passa<br/>
+quando velha se parte ao meio<br/>
+sem nunca ter mudado nada<br/>
