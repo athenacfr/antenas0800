@@ -3,19 +3,19 @@ public: true
 ---
 
 ulisses
-![1](./1.jpg)
+![ulisses](./ulisses.jpg)
 
 pumpkin tradition
-![2](./2.jpg)
+![pumpkin](./pumpkin.jpg)
 
 some plants for my mom
-![3](./3.jpg)
+![plants](./plants.jpg)
 
 my feet
-![4](./4.jpg)
+![feet](./feet.jpg)
 
 kapo + bolinho combo
-![5](./5.jpg)
+![kapo](./kapo-bolinho.jpg)
 
 a mococa in my purse
-![6](./6.jpg)
+![mococa](./mococa.jpg)
