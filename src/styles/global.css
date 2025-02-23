@@ -4,20 +4,8 @@
 @layer base {
   * {
     margin: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-
-  pre {
-    background-color: transparent !important;
+    font-family: 'Source Serif 4', 'Noto Emoji', serif;
+    font-optical-sizing: auto;
   }
 
   a {
@@ -27,5 +15,39 @@
   a:hover,
   a:focus {
     text-decoration: underline;
+  }
+
+  .prose {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote {
+      margin-block: 0.75em;
+    }
+
+    pre {
+      background-color: transparent !important;
+    }
+
+    blockquote {
+      border-left: 2px solid white;
+      padding-left: 16px;
+    }
+
+    img,
+    video {
+      display: block;
+      margin-inline: auto;
+      margin-block: 16px;
+
+      width: 50vw;
+      height: fit-content;
+      max-height: 640px;
+      object-fit: contain;
+    }
   }
 }

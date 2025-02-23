@@ -5,7 +5,6 @@ const antenas = defineCollection({
   loader: glob({ base: './src/content/antenas', pattern: '**/*.{md,mdx}' }),
   schema: ({ image }) =>
     z.object({
-      image: image().optional(),
       date: z.coerce
         .date()
         .transform((date) => {

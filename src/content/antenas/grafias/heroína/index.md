@@ -11,8 +11,7 @@ não sei o quão egoísta posso ser antes de colapsar
 
 temo tentar a tentativa de viver e falhar
 
-&nbsp;
-
+<br/>
 chuva doce, forte e ácida
 
 heroína feita só pra mim?
@@ -21,8 +20,7 @@ era de se esperar um risco tão viciante
 
 quero te repetir até cansar
 
-&nbsp;
-
+<br/>
 temo tanta coisa ao mesmo tempo
 
 parece que faz tempo que não sinto nada
@@ -31,8 +29,7 @@ por isso, sinto medo de perder o que sinto
 
 e esse medo é o que me mantém sentindo
 
-&nbsp;
-
+<br/>
 é esse medo que me traz a paz
 
 a possibilidade de recomeçar
@@ -41,8 +38,7 @@ talvez até pelo mesmo início
 
 amo fazer valer cada tentativa ineficaz
 
-&nbsp;
-
+<br/>
 me dói tanto saber que a telha
 
 só se quebra quando o tempo passa

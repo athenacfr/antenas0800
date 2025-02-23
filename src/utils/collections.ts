@@ -51,7 +51,7 @@ export const extendCollection = <C extends keyof DataEntryMap>(
 
       return { ...entry, name, post };
     }),
-    R.sort((entry) => (entry.post?.data.date ? -entry.post.data.date : 0)),
+    R.sortBy(R.prop('name')),
     (array) =>
       R.map(array, (entry) => {
         const related = array.filter((currentEntry) => {

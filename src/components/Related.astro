@@ -10,12 +10,14 @@ const { related } = Astro.props;
 
 ---
 
-<ul>
-  {
-    related.map(({ path, name }) => (
-      <li>
-        <a href={PATHS.slug(path)}>{name}</a>
-      </li>
-    ))
-  }
-</ul>
+<div class="prose mx-auto w-full max-w-4xl">
+  <ul>
+    {
+      related.map(({ path, name }) => (
+        <li>
+          <a href={PATHS.slug(path)}>{name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

@@ -5,8 +5,7 @@ date: 2023-06-04
 
 tudo é efêmero, eu queria ser etéreo. cansei-me de recordar e fantasiar.
 
-&nbsp;
-
+<br/>
 quero ser toda música tocada entre junho e julho.
 
 ser uma fala surpreendente feita dentro de sala de aula.
@@ -15,24 +14,21 @@ ser as cores intocáveis do arco-íris.
 
 quero pensar de forma ramificada e comunicar-me pós-verbalmente.
 
-&nbsp;
-
+<br/>
 infeliz é pensar que respostas existem.
 
 o mérito existe junto da noite ao dia e da melancolia.
 
 eu sinto como se eu fosse essas músicas. acho que sou tudo isso de alguma forma.
 
-&nbsp;
-
+<br/>
 recordei-me da tal hiperfixação que já escreveu sobre uma tal poetiza patética.
 
 afinal quem diabos se considera poeta no século XXI?
 
 apenas embarcações sem consciência interpretando o papel de ser o que dizem, eu acho.
 
-&nbsp;
-
+<br/>
 não importa o horário desde que você se sinta à noite.
 
 desde que a chuva o contorne, dançando quase a cambalear.
@@ -47,32 +43,27 @@ o tempo fez esquecer.
 
 as atrizes e cicatrizes que já se apresentaram não se apresentarão mais.
 
-&nbsp;
-
+<br/>
 esse pensamento sempre volta, uma corda em volta do pescoço, ou será que é um cordão?
 
 semântica não importa diante disso tudo.
 
-&nbsp;
-
+<br/>
 seu chaveiro sempre vai girar em volta de seu dedo.
 
 seu moletom velho e surrado sempre vai te envolver como se não houvesse tempo.
 
 o cabelo perdido ao vento que te irrita de forma homogênea.
 
-&nbsp;
-
+<br/>
 eu sinto tudo aquilo que me fez sentir.
 
-&nbsp;
-
+<br/>
 a lágrima contínua e petrificada, usada como lente, logo ganha sua armação e se torna parte do olho.
 
 algo que saiu e fez seu próprio caminho de volta.
 
-&nbsp;
-
+<br/>
 porque em 2007 você não pôde enquanto os outros podiam.
 
 porque em 2018 se despertou da forma mais revoltante possível.
@@ -83,8 +74,7 @@ porque hoje isso tudo se repete.
 
 porque de nada adiantou pensar em tudo isso, se isso tudo se tornou inexpressável por sua complexidade.
 
-&nbsp;
-
+<br/>
 foi criada muito mais que uma dimensão e seu tamanho se tornou imensurável e irrepresentável.
 
 inmencionáveis tentativas de expressão foram criadas e sem forma foram assim como a água, evaporaram.
@@ -95,8 +85,7 @@ então, talvez se tentarmos várias vezes?
 
 essa tentativa incoerente de representação é como a visão de um cego. e eu sou cega.
 
-&nbsp;
-
+<br/>
 é como a chuva;
 
 aquelas suas cartas à mão feitas às pressas;
@@ -109,8 +98,7 @@ a barata robótica que foi importada da china;
 
 o cheiro de seu irmão.
 
-&nbsp;
-
+<br/>
 é isso que faz valer a tentativa.
 
 eu sinto o que me fez sentir.

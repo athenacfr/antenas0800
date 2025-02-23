@@ -11,8 +11,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<article>
-  {post.data.image && <img {...post.data.image} />}
+<article class="prose mx-auto w-full max-w-4xl">
   {post.data.date && <FormattedDate date={post.data.date} />}
   {post.data.date && <br />}
   {post.data.date && <br />}

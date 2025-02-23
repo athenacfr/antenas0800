@@ -1,49 +1,27 @@
 ---
-public: true
+public: false
 ---
 
-aqui? o tempo continua o mesmo
+aqui? o tempo continua o mesmo <br/>
+ao menos é disso que me convenci <br/>
+me convenci que fui eu não mudei <br/>
 
-ao menos é disso que me convenci
+já me convenci de tanta coisa <br/>
+que o ruim não é ruim <br/>
+que a culpa dos outros vive em superposição <br/>
 
-me convenci que fui eu não mudei
+agora? minha empatia quase que se desmancha <br/>
+ela esta em uma linha tênue de querer acreditar nos outros e de querer acreditar em mim <br/>
+o egoismo... não, o abismo do ego. eu não sei se ele é um vilão <br/>
+porém tem gente que me ajuda a não acreditar nisso <br/>
+mesmo as vezes não ajudando em nada <br/>
 
-&nbsp;
+são por essas pessoas que eu tento <br/>
+que eu tento <br/>
+tento <br/>
+tento <br/>
+tento <br/>
+de novo e de novo <br/>
+mesmo não querendo tentar <br/>
 
-já me convenci de tanta coisa
-
-que o ruim não é ruim
-
-que a culpa dos outros está em superposição
-
-&nbsp;
-
-agora? minha empatia quase que se desmancha
-
-ela esta em uma linha tenue de querer acreditar nos outros e de querer acreditar em mim
-
-o egoismo... não, o abismo do ego. eu não sei se ele é um vilão
-
-porém tem gente que me ajuda a não acreditar nisso
-
-mesmo as vezes não ajudando em nada
-
-&nbsp;
-
-são por essas pessoas que eu tento
-
-que eu tento
-
-tento
-
-tento
-
-tento
-
-de novo e de novo
-
-mesmo não querendo tentar
-
-&nbsp;
-
-obrigada
+obrigada <br/>
