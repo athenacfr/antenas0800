@@ -52,7 +52,11 @@ export const extendCollection = <C extends keyof DataEntryMap>(
       return { ...entry, name, post };
     }),
     R.sort((a, b) =>
-      a.post && b.post ? b.post?.data.year - a.post?.data.year : -1,
+      !a.post?.data.year
+        ? -1
+        : b.post?.data.year
+          ? b.post.data.year - a.post.data.year
+          : 0,
     ),
     (array) =>
       R.map(array, (entry) => {

@@ -7,11 +7,17 @@ type Props = {
   post: NonNullable<ExtendedCollectionEntry['post']>
 };
 
-const { name, post } = Astro.props;
+const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
 <article class="prose">
-  <p>{name}</p>
+  {
+    post.data.year && (
+      <p>
+        <i>season {post.data.year}</i>
+      </p>
+    )
+  }
   <Content />
 </article>

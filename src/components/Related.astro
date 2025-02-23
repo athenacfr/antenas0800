@@ -16,7 +16,8 @@ const { related } = Astro.props;
       related.map(({ path, name, post }) => (
         <li>
           <a href={PATHS.slug(path)}>
-            {name} {post && `@ ${post.data.year}`}
+            {name}
+            {post?.data.year && `@ ${post.data.year}`}
           </a>
         </li>
       ))
